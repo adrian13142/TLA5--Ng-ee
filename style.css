@@ -1,0 +1,80 @@
+*{
+		margin: 0;
+		padding: 0;
+		text-decoration: none;
+		box-sizing: border-box;
+		background: lightblue;
+}
+nav {
+	background: maroon;
+	height: 80px;
+	width: 100%;
+}
+
+nav ul{
+	background: maroon;
+	float: right;
+	margin-right: 20px;
+}
+nav ul li {
+	display: inline-flex;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a{
+	background: maroon;
+	color: white;
+	font-size: 17px;
+	text-transform: uppercase ;
+}
+nav ul li a:hover{
+background:lightblue;
+color: black;
+transition: 0.4s all ease-out;
+ }
+ .container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin: 40px 20px 0 20px;
+}
+	.container .heading{
+		width: 50%;
+		padding-bottom: 50px;
+		color: maroon;
+
+}	
+	.container .heading h3{
+		font-size: 3em;
+		font-weight: bolder;
+		padding-bottom: 50px;
+		border-bottom: 3px solid maroon;
+}
+
+	.container .heading h3 span{
+		font-weight: 100;
+		color: black;
+}
+	.container .box {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+}
+.container .box .dream{
+	display: flex;
+	flex-direction: column;
+	width: 27%;
+}
+.container .box .dream img{
+	width: 100%;
+	padding-bottom: 15px;
+	border-radius: 5px;
+	filter: grayscale(100%);
+	transition: 1s;
+}
+.container .box .dream img:hover{
+	filter: grayscale(0);
+	transform: scale(1.1);
+}
